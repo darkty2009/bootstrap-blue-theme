@@ -11,6 +11,7 @@
   padding-left: 0; // Override default ul/ol
   list-style: none;
   @include clearfix;
+  color: $gray-darker;
 
   > li {
     position: relative;

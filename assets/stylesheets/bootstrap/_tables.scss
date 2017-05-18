@@ -23,6 +23,7 @@ th {
   width: 100%;
   max-width: 100%;
   margin-bottom: $line-height-computed;
+  color:#666;
   // Cells
   > thead,
   > tbody,
@@ -32,15 +33,21 @@ th {
       > td {
         padding: $table-cell-padding;
         line-height: $line-height-base;
-        vertical-align: top;
+        vertical-align: middle;
         border-top: 1px solid $table-border-color;
       }
     }
   }
   // Bottom align for column headings
+  > thead > tr:first-child {
+      background-color:#f2f2f2;
+      border-bottom:1px solid #dfdfdf;
+  }
   > thead > tr > th {
-    vertical-align: bottom;
-    border-bottom: 2px solid $table-border-color;
+    height:48px;
+    vertical-align: middle;
+    color: $gray-darker;
+    //border-bottom: 2px solid $table-border-color;
   }
   // Remove top border from thead by default
   > caption + thead,
